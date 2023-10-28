@@ -25,7 +25,7 @@ function clickButton() {
   btn1.style.background = "aqua";
   const newText1 = document.createElement("p");
   newText1.textContent = "Halo bung! apa kabar";
-  body.append(newText);
+  body.append(newText1);
 }
 
 function ubahText() {
