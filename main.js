@@ -6,6 +6,10 @@ const btn2 = document.querySelector(".btn2");
 const defaultText = "Klik saya 1";
 btn1.textContent = defaultText;
 
+const textTugas = "jadi pas onmouseout ganti warna nih";
+const newText2 = document.createElement("p");
+newText2.textContent = textTugas;
+
 btn1.style.border = "none";
 btn1.style.padding = "8px";
 btn1.style.fontSize = "24px";
@@ -19,8 +23,8 @@ btn2.style.background = "tomato";
 
 function clickButton() {
   btn1.style.background = "aqua";
-  const newText = document.createElement("p");
-  newText.textContent = "Halo bung! apa kabar";
+  const newText1 = document.createElement("p");
+  newText1.textContent = "Halo bung! apa kabar";
   body.append(newText);
 }
 
@@ -32,10 +36,12 @@ function oriText() {
   btn1.textContent = defaultText;
 }
 
+//tugas tugasan
 function onHover() {
-  const newText = document.createElement("p");
-  newText.textContent = "jadi pas onmouseout ganti warna nih";
-  body.append(newText);
+  body.append(newText2);
+  newText2.style.background = null;
 }
 
-function animasiOut() {}
+function animasiOut() {
+  newText2.style.background = "aqua";
+}
